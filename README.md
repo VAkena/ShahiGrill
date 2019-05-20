@@ -1,4 +1,4 @@
 # Shahi Grill
-Information Systems Development Methodologies
-![](Screenshots/HomeSC.png)
-![](Screenshots/AppSC.png)
+<b>31257 Information Systems Development Methodologies</b>
+<img src="Screenshots/HomeSC.png" width="50">
+<img src="Screenshots/AppSC.png" width="50">
