@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ShahiGrill.Models;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Linq;
@@ -16,6 +17,26 @@ namespace ShahiGrill
         public MainPage()
         {
             InitializeComponent();
+        }
+
+        private void SignIn_Clicked(object sender, EventArgs e)
+        {
+            
+            Users user = new Users(usernameEntry.Text, passwordEntry.Text);
+            if (user.CheckInformation())
+            {
+                DisplayAlert("Login", "Success", "Close");
+            }
+            else
+            {
+                DisplayAlert("Login", "Failed successfully", "Close");
+            }
+            
+        }
+
+        private void SignUp_Clicked(object sender, EventArgs e)
+        {
+            DisplayAlert("Sign Up", "Feature coming soon!", "Close");
         }
     }
 }
