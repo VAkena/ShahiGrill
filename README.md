@@ -1,2 +1,2 @@
-# Shahi Grill - Cross-platform Mobile Apps
+# Shahi Grill
 Information Systems Development Methodologies
