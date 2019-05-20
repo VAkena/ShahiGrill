@@ -4,11 +4,40 @@
              xmlns:local="clr-namespace:ShahiGrill"
              x:Class="ShahiGrill.MainPage">
 
-    <StackLayout>
-        <!-- Place new controls here -->
-        <Label Text="Welcome to Xamarin.Forms!" 
-           HorizontalOptions="Center"
-           VerticalOptions="CenterAndExpand" />
-    </StackLayout>
+    <ContentPage.Content>
+        <StackLayout x:Name="masterStack">
+            
+            <StackLayout x:Name="imageStack" Padding="15,80,15,20">
+                <Image Source="Original" HeightRequest="150"/>
+                <Label Text="Shahi Grill" FontSize="26" HorizontalOptions="Center"/>
+            </StackLayout>
+
+            <StackLayout x:Name="loginStack" Padding="20">
+                <Entry x:Name="usernameEntry" Placeholder="Username" />
+                <Entry x:Name="passwordEntry" Placeholder="Password" IsPassword="True"/>
+
+                <StackLayout Padding="0,20,0,0">
+                    <Button x:Name="signIn" Text="Sign In" BackgroundColor="#B0BEC5"/>
+                </StackLayout>
+
+                <StackLayout Padding="0,10,0,10" >
+                    <Button x:Name="signUp" Text="Sign Up" BackgroundColor="#aad402"/>
+                </StackLayout>
+
+                <Grid HeightRequest="50" WidthRequest="200">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                    </Grid.RowDefinitions>
+
+                    <StackLayout>
+                        <Label Text="© 2019 Information Systems Development Methodologies" 
+                               VerticalTextAlignment="Center"
+                               HorizontalTextAlignment="Center"
+                               Grid.Row="0"/>
+                    </StackLayout>
+                </Grid>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
 
 </ContentPage>
