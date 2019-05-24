@@ -1,4 +1,5 @@
 ﻿using ShahiGrill.Models;
+using ShahiGrill.Views;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -19,9 +20,11 @@ namespace ShahiGrill
             InitializeComponent();
         }
 
-        private void SignIn_Clicked(object sender, EventArgs e)
+        public async void SignIn_Clicked(object sender, EventArgs e)
         {
+            await Navigation.PushAsync(new Dashboard());
             
+            /*
             Users user = new Users(usernameEntry.Text, passwordEntry.Text);
             if (user.CheckInformation())
             {
@@ -31,6 +34,7 @@ namespace ShahiGrill
             {
                 DisplayAlert("Login", "Failed successfully", "Close");
             }
+            */
             
         }
 
