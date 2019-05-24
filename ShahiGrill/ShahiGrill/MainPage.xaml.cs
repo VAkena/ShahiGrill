@@ -40,7 +40,7 @@ namespace ShahiGrill
 
         private void SignUp_Clicked(object sender, EventArgs e)
         {
-            DisplayAlert("Sign Up", "Feature coming soon!", "Close");
+            DisplayAlert("Sign Up", "Feature coming soon!", "OK");
         }
     }
 }

@@ -3,7 +3,12 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:ShahiGrill"
              x:Class="ShahiGrill.MainPage">
-
+    <!--Implicit page styling-->
+    <ContentPage.Resources>
+        <ResourceDictionary>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    
     <ContentPage.Content>
         <StackLayout x:Name="masterStack">
             <StackLayout x:Name="imageStack" Padding="20">
