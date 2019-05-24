@@ -5,12 +5,13 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
              x:Class="ShahiGrill.Views.Dashboard">
+
     <ContentPage.Content>
         <StackLayout Padding="15">
             <Label Text="Welcome to the Dashboard" 
                    HorizontalTextAlignment="Center"
                    FontSize="20"/>
-
+            <!--Used for organisation purposes-->
             <Grid>
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="*" />
@@ -25,7 +26,9 @@
                     <RowDefinition Height="*" />
                 </Grid.RowDefinitions>
             </Grid>
-            <StackLayout Grid.Row="0" Grid.Column="0" Padding="0,20,0,20">
+
+            <!--Items relating to viewing the menu-->
+            <StackLayout Grid.Row="0" Grid.Column="0" Padding="0,10,0,20">
                 <Label Text="View Menu" HorizontalTextAlignment="Center" FontSize="15"/>
                 <Image Source="book.png">
                     <Image.GestureRecognizers>
@@ -35,8 +38,9 @@
                 </Image>
 
             </StackLayout>
-            
-            <StackLayout Grid.Row="0" Grid.Column="0" Padding="0,20,0,20">
+
+            <!--Items relating to making a reservation-->
+            <StackLayout Grid.Row="0" Grid.Column="0" Padding="0,10,0,20">
                 <Label Text="Make Reservations" HorizontalTextAlignment="Center" FontSize="15"/>
                 <Image Source="res.png">
                     <Image.GestureRecognizers>
@@ -45,8 +49,9 @@
                     </Image.GestureRecognizers>
                 </Image>
             </StackLayout>
-            
-            <StackLayout Grid.Row="0" Grid.Column="0" Padding="0,20,0,20"> 
+
+            <!--Items relating to viewing specials and offers-->
+            <StackLayout Grid.Row="0" Grid.Column="0" Padding="0,10,0,20">
                 <Label Text="Specials and Offers" HorizontalTextAlignment="Center" FontSize="15"/>
                 <Image Source="special.png">
                     <Image.GestureRecognizers>
@@ -55,7 +60,18 @@
                     </Image.GestureRecognizers>
                 </Image>
             </StackLayout>
-            
+
+            <!--Items relating to viewing settins-->
+            <StackLayout Grid.Row="0" Grid.Column="0" Padding="0,20,0,20">
+                <Label Text="Settings" HorizontalTextAlignment="Center" FontSize="15"/>
+                <Image Source="settings.png">
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="TapGestureRecognizerSS_TappedAsync"
+                                              NumberOfTapsRequired="1"/>
+                    </Image.GestureRecognizers>
+                </Image>
+            </StackLayout>
+
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
