@@ -18,6 +18,9 @@ namespace ShahiGrill
         public MainPage()
         {
             InitializeComponent();
+
+            //Navigates from username entry to password automatically
+            usernameEntry.ReturnCommand = new Command(() => passwordEntry.Focus());
         }
 
         public async void SignIn_Clicked(object sender, EventArgs e)

@@ -15,6 +15,13 @@ namespace ShahiGrill.Views
         public Reservation()
         {
             InitializeComponent();
+
+            //Navigates from each entry field to the next automatically
+            fname.ReturnCommand = new Command(() => lname.Focus());
+            lname.ReturnCommand = new Command(() => email.Focus());
+            email.ReturnCommand = new Command(() => phone.Focus());
+            phone.ReturnCommand = new Command(() => numguests.Focus());
+
         }
 
         private void Button_Clicked(object sender, EventArgs e)

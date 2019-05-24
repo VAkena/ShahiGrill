@@ -10,15 +10,15 @@
             <StackLayout>
                 <Label Text=" Make a Reservation" 
                        HorizontalTextAlignment="Center"
-                       FontSize="20" FontAttributes="Bold"/>
-                <Entry Placeholder="First Name"/>
-                <Entry Placeholder="Last Name"/>
-                <Entry Placeholder="Email"/>
-                <Entry Placeholder="Phone"/>
-                <Entry Placeholder="No. of Guests"/>
+                       FontSize="23" FontAttributes="Bold"/>
+                <Entry x:Name="fname" Placeholder="First Name" ReturnType="Next"/>
+                <Entry x:Name="lname" Placeholder="Last Name" ReturnType="Next"/>
+                <Entry x:Name="email" Placeholder="Email" ReturnType="Next"/>
+                <Entry x:Name="phone" Placeholder="Phone" ReturnType="Next"/>
+                <Entry x:Name="numguests" Placeholder="No. of Guests" ReturnType="Done"/>
                 <DatePicker/>
                 <TimePicker/>
-                <Picker Title="Reservation Type" VerticalOptions="CenterAndExpand"
+                <Picker x:Name="restype" Title="Reservation Type" VerticalOptions="CenterAndExpand"
                         Margin="10,0">
                     <Picker.Items>
                         <x:String>Dinner</x:String>

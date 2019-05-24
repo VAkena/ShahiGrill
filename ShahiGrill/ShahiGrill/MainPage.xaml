@@ -11,13 +11,16 @@
     
     <ContentPage.Content>
         <StackLayout x:Name="masterStack">
+            
             <StackLayout x:Name="imageStack" Padding="20">
                 <Image Source="Original" HeightRequest="150"/>
-                <Label Text="Shahi Grill" FontSize="23" HorizontalOptions="Center"/>
+                <Label Text="Shahi Grill" FontSize="28" 
+                       HorizontalOptions="Center" FontAttributes="Bold"/>
             </StackLayout>
+            
             <StackLayout x:Name="loginStack" Padding="20">
-                <Entry x:Name="usernameEntry" Placeholder="Username"/>
-                <Entry x:Name="passwordEntry" Placeholder="Password" IsPassword="True"/>
+                <Entry x:Name="usernameEntry" Placeholder="Username" ReturnType="Next"/>
+                <Entry x:Name="passwordEntry" Placeholder="Password" IsPassword="True" ReturnType="Done"/>
                 <StackLayout Padding="0,20,0,0">
                     <Button x:Name="signIn" Text="Sign In" BackgroundColor="#B0BEC5" Clicked="SignIn_Clicked"/>
                 </StackLayout>

@@ -10,7 +10,7 @@
         <StackLayout Padding="15">
             <Label Text="Welcome to the Dashboard" 
                    HorizontalTextAlignment="Center"
-                   FontSize="20"/>
+                   FontSize="23" FontAttributes="Bold"/>
             <!--Used for organisation purposes-->
             <Grid>
                 <Grid.ColumnDefinitions>

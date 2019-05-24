@@ -18,6 +18,7 @@ namespace ShahiGrill.Views
             InitializeComponent();
         }
 
+        //Menu
         private async void TapGestureRecognizerM_TappedAsync(object sender, EventArgs e)
         {
             //Counts the amount of times the image is clicked
@@ -37,6 +38,7 @@ namespace ShahiGrill.Views
             }
         }
 
+        //Reservations
         private async void TapGestureRecognizerR_TappedAsync(object sender, EventArgs e)
         {
             int tapCount = 0;
@@ -53,6 +55,7 @@ namespace ShahiGrill.Views
             }
         }
 
+        //Specials and promotions
         private async void TapGestureRecognizerS_TappedAsync(object sender, EventArgs e)
         {
             int tapCount = 0;
@@ -78,7 +81,7 @@ namespace ShahiGrill.Views
             // watch the monkey go from color to black&white!
             if (tapCount == 1)
             {
-                await Navigation.PushAsync(new Settings());
+                await DisplayAlert("Alert", "Feature coming soon!", "OK");
             }
             else
             {
