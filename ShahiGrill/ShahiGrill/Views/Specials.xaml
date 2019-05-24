@@ -6,10 +6,6 @@
              mc:Ignorable="d"
              x:Class="ShahiGrill.Views.Specials">
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Specials"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
-        </StackLayout>
+        <WebView Source="https://www.frugalfeeds.com.au/subway-deals-vouchers-and-coupons/"></WebView>
     </ContentPage.Content>
 </ContentPage>

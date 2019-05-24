@@ -6,10 +6,6 @@
              mc:Ignorable="d"
              x:Class="ShahiGrill.Views.Menu">
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Menu"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
-        </StackLayout>
+        <WebView Source="https://www.subway.com/en-AU/MenuNutrition/Menu" />
     </ContentPage.Content>
 </ContentPage>

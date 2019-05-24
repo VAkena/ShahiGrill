@@ -16,5 +16,10 @@ namespace ShahiGrill.Views
         {
             InitializeComponent();
         }
+
+        private void Button_Clicked(object sender, EventArgs e)
+        {
+            DisplayAlert("Success","Reservation has been sent!","OK");
+        }
     }
 }

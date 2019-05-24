@@ -6,10 +6,31 @@
              mc:Ignorable="d"
              x:Class="ShahiGrill.Views.Reservation">
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Reservations"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
-        </StackLayout>
+        <ScrollView Padding="20">
+            <StackLayout>
+                <Label Text=" Make a Reservation" 
+                       HorizontalTextAlignment="Center"
+                       FontSize="20" FontAttributes="Bold"/>
+                <Entry Placeholder="First Name"/>
+                <Entry Placeholder="Last Name"/>
+                <Entry Placeholder="Email"/>
+                <Entry Placeholder="Phone"/>
+                <Entry Placeholder="No. of Guests"/>
+                <DatePicker/>
+                <TimePicker/>
+                <Picker Title="Reservation Type" VerticalOptions="CenterAndExpand"
+                        Margin="10,0">
+                    <Picker.Items>
+                        <x:String>Dinner</x:String>
+                        <x:String>Anniversary</x:String>
+                        <x:String>Birthday</x:String>
+                        <x:String>Wedding</x:String>
+                        <x:String>Corporate</x:String>
+                        <x:String>Holiday</x:String>
+                    </Picker.Items>
+                </Picker>
+                <Button Text="Submit" Clicked="Button_Clicked"/>
+            </StackLayout>
+        </ScrollView>
     </ContentPage.Content>
 </ContentPage>
