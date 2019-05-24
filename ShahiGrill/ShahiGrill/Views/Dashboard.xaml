@@ -6,10 +6,56 @@
              mc:Ignorable="d"
              x:Class="ShahiGrill.Views.Dashboard">
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+        <StackLayout Padding="15">
+            <Label Text="Welcome to the Dashboard" 
+                   HorizontalTextAlignment="Center"
+                   FontSize="20"/>
+
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+            </Grid>
+            <StackLayout Grid.Row="0" Grid.Column="0" Padding="0,20,0,20">
+                <Label Text="View Menu" HorizontalTextAlignment="Center" FontSize="15"/>
+                <Image Source="book.png">
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="TapGestureRecognizerM_TappedAsync"
+                                              NumberOfTapsRequired="1"/>
+                    </Image.GestureRecognizers>
+                </Image>
+
+            </StackLayout>
+            
+            <StackLayout Grid.Row="0" Grid.Column="0" Padding="0,20,0,20">
+                <Label Text="Make Reservations" HorizontalTextAlignment="Center" FontSize="15"/>
+                <Image Source="res.png">
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="TapGestureRecognizerR_TappedAsync"
+                                              NumberOfTapsRequired="1"/>
+                    </Image.GestureRecognizers>
+                </Image>
+            </StackLayout>
+            
+            <StackLayout Grid.Row="0" Grid.Column="0" Padding="0,20,0,20"> 
+                <Label Text="Specials and Offers" HorizontalTextAlignment="Center" FontSize="15"/>
+                <Image Source="special.png">
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="TapGestureRecognizerS_TappedAsync"
+                                              NumberOfTapsRequired="1"/>
+                    </Image.GestureRecognizers>
+                </Image>
+            </StackLayout>
+            
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
