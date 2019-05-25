@@ -5,6 +5,16 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
              x:Class="ShahiGrill.Views.Reservation">
+
+    <!--Implicit page styling-->
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Style x:Key="baseStyle" TargetType="Button">
+                <Setter Property="BackgroundColor" Value="#aad402"></Setter>
+            </Style>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    
     <ContentPage.Content>
         <ScrollView Padding="20">
             <StackLayout>
@@ -29,7 +39,7 @@
                         <x:String>Holiday</x:String>
                     </Picker.Items>
                 </Picker>
-                <Button Text="Submit" Clicked="Button_Clicked"/>
+                <Button Text="Submit" Clicked="Button_Clicked" BackgroundColor="#aad402"/>
             </StackLayout>
         </ScrollView>
     </ContentPage.Content>

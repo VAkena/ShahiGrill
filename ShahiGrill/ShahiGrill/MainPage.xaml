@@ -6,6 +6,9 @@
     <!--Implicit page styling-->
     <ContentPage.Resources>
         <ResourceDictionary>
+            <Style x:Key="baseStyle" TargetType="Button">
+                <Setter Property="BackgroundColor" Value="#aad402"></Setter>
+            </Style>
         </ResourceDictionary>
     </ContentPage.Resources>
     

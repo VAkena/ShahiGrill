@@ -21,19 +21,16 @@ namespace ShahiGrill.Views
         //Menu
         private async void TapGestureRecognizerM_TappedAsync(object sender, EventArgs e)
         {
-            //Counts the amount of times the image is clicked
+            //Image click count
             int tapCount = 0;
             tapCount++;
             var imageSender = (Image)sender;
-            // watch the monkey go from color to black&white!
             if (tapCount == 1)
             {
-                //Handles navigation to the specified page
                 await Navigation.PushAsync(new Menu());
             }
             else
             {
-                //Displays error message if navigation task fails
                 await DisplayAlert("Alert", "Navigation Failed", "OK");
             }
         }
