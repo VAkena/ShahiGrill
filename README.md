@@ -6,7 +6,9 @@ Vincent Akena <b>13268646</b>, Nathan Attard <b>13246273</b>, Rheshav Maharaj <b
   <img src="Screenshots/newhome.png" width="250" align="left"/>
   <img src="Screenshots/home.png" width="250" align="left"/> 
   <img src="Screenshots/dashboard.png" width="250" align="left"/>
- </div> <br>
+ </div> 
+
+<br> <br> <br>
 
 <div>
   <img src="Screenshots/menu.png" width="250" align="left"/> 
