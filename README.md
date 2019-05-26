@@ -1,5 +1,5 @@
 # Shahi Grill
-<b>31257 Information Systems Development Methodologies Autumn 2019</b> <br> <br>
+<b>31257 Information System Development Methodologies Autumn 2019</b> <br> <br>
 Vincent Akena <b>13268646</b>, Nathan Attard <b>13246273</b>, Rheshav Maharaj <b>13229620</b> 
 <b>Technologies used</b>
 - <b>Visual Studio 2019</b> as the IDE of choice
