@@ -19,7 +19,7 @@ namespace ShahiGrill
         {
             InitializeComponent();
 
-            //Navigates from username entry to password automatically
+            //Password entry becomes the focus after username
             usernameEntry.ReturnCommand = new Command(() => passwordEntry.Focus());
         }
 
@@ -27,6 +27,7 @@ namespace ShahiGrill
         {
             await Navigation.PushAsync(new Dashboard());
             
+            //Original signin function
             /*
             Users user = new Users(usernameEntry.Text, passwordEntry.Text);
             if (user.CheckInformation())

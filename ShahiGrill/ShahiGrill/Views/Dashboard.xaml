@@ -11,7 +11,7 @@
             <Label Text="Welcome to the Dashboard" 
                    HorizontalTextAlignment="Center"
                    FontSize="23" FontAttributes="Bold"/>
-            <!--Used for organisation purposes-->
+            <!--Grid layout-->
             <Grid>
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="*" />
@@ -27,9 +27,10 @@
                 </Grid.RowDefinitions>
             </Grid>
 
-            <!--Items relating to viewing the menu-->
+            <!--Menu item-->
             <StackLayout Grid.Row="0" Grid.Column="0" Padding="0,10,0,20">
                 <Label Text="View Menu" HorizontalTextAlignment="Center" FontSize="15"/>
+                <!--Image can be tapped to navigate-->
                 <Image Source="book.png">
                     <Image.GestureRecognizers>
                         <TapGestureRecognizer Tapped="TapGestureRecognizerM_TappedAsync"
@@ -39,7 +40,7 @@
 
             </StackLayout>
 
-            <!--Items relating to making a reservation-->
+            <!--Reservation item-->
             <StackLayout Grid.Row="0" Grid.Column="0" Padding="0,10,0,20">
                 <Label Text="Make Reservations" HorizontalTextAlignment="Center" FontSize="15"/>
                 <Image Source="res.png">
@@ -50,7 +51,7 @@
                 </Image>
             </StackLayout>
 
-            <!--Items relating to viewing specials and offers-->
+            <!--Specials and promotions item-->
             <StackLayout Grid.Row="0" Grid.Column="0" Padding="0,10,0,20">
                 <Label Text="Specials and Offers" HorizontalTextAlignment="Center" FontSize="15"/>
                 <Image Source="special.png">
@@ -61,7 +62,7 @@
                 </Image>
             </StackLayout>
 
-            <!--Items relating to viewing settins-->
+            <!--Settings item-->
             <StackLayout Grid.Row="0" Grid.Column="0" Padding="0,20,0,20">
                 <Label Text="Settings" HorizontalTextAlignment="Center" FontSize="15"/>
                 <Image Source="settings.png">

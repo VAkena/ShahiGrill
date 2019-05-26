@@ -16,7 +16,7 @@ namespace ShahiGrill.Views
         {
             InitializeComponent();
 
-            //Navigates from each entry field to the next automatically
+            //Navigates from each entry field to the next
             fname.ReturnCommand = new Command(() => lname.Focus());
             lname.ReturnCommand = new Command(() => email.Focus());
             email.ReturnCommand = new Command(() => phone.Focus());
@@ -24,6 +24,7 @@ namespace ShahiGrill.Views
 
         }
 
+        //Submission button
         private void Button_Clicked(object sender, EventArgs e)
         {
             DisplayAlert("Success","Reservation has been sent!","OK");

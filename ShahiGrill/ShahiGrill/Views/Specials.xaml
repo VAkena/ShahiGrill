@@ -6,6 +6,7 @@
              mc:Ignorable="d"
              x:Class="ShahiGrill.Views.Specials">
     <ContentPage.Content>
+        <!--Displays website for subway deals, specials and promotions-->
         <WebView Source="https://www.frugalfeeds.com.au/subway-deals-vouchers-and-coupons/"></WebView>
     </ContentPage.Content>
 </ContentPage>

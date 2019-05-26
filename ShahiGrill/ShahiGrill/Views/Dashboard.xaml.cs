@@ -18,30 +18,32 @@ namespace ShahiGrill.Views
             InitializeComponent();
         }
 
-        //Menu
+        //Menu item
         private async void TapGestureRecognizerM_TappedAsync(object sender, EventArgs e)
         {
             //Image click count
             int tapCount = 0;
             tapCount++;
             var imageSender = (Image)sender;
+            //When image is tapped
             if (tapCount == 1)
             {
+                //Navigates to the menu view
                 await Navigation.PushAsync(new Menu());
             }
             else
             {
+                //Error message if navigation fails
                 await DisplayAlert("Alert", "Navigation Failed", "OK");
             }
         }
 
-        //Reservations
+        //Reservations item
         private async void TapGestureRecognizerR_TappedAsync(object sender, EventArgs e)
         {
             int tapCount = 0;
             tapCount++;
             var imageSender = (Image)sender;
-            // watch the monkey go from color to black&white!
             if (tapCount == 1)
             {
                 await Navigation.PushAsync(new Reservation());
@@ -52,13 +54,12 @@ namespace ShahiGrill.Views
             }
         }
 
-        //Specials and promotions
+        //Specials and promotions item
         private async void TapGestureRecognizerS_TappedAsync(object sender, EventArgs e)
         {
             int tapCount = 0;
             tapCount++;
             var imageSender = (Image)sender;
-            // watch the monkey go from color to black&white!
             if (tapCount == 1)
             {
                 await Navigation.PushAsync(new Specials());
@@ -70,12 +71,13 @@ namespace ShahiGrill.Views
 
         }
 
+        //Settings item
+        //Navigation not defined
         private async void TapGestureRecognizerSS_TappedAsync(object sender, EventArgs e)
         {
             int tapCount = 0;
             tapCount++;
             var imageSender = (Image)sender;
-            // watch the monkey go from color to black&white!
             if (tapCount == 1)
             {
                 await DisplayAlert("Alert", "Feature coming soon!", "OK");

@@ -14,20 +14,23 @@
             </Style>
         </ResourceDictionary>
     </ContentPage.Resources>
-    
+
     <ContentPage.Content>
         <ScrollView Padding="20">
             <StackLayout>
-                <Label Text=" Make a Reservation" 
+                <Label Text="Reservation Form" 
                        HorizontalTextAlignment="Center"
                        FontSize="23" FontAttributes="Bold"/>
+                <!--Data fields-->
                 <Entry x:Name="fname" Placeholder="First Name" ReturnType="Next"/>
                 <Entry x:Name="lname" Placeholder="Last Name" ReturnType="Next"/>
                 <Entry x:Name="email" Placeholder="Email" ReturnType="Next"/>
                 <Entry x:Name="phone" Placeholder="Phone" ReturnType="Next"/>
                 <Entry x:Name="numguests" Placeholder="No. of Guests" ReturnType="Done"/>
+                <!--Choose date and time-->
                 <DatePicker/>
                 <TimePicker/>
+                <!--Different types of reservations-->
                 <Picker x:Name="restype" Title="Reservation Type" VerticalOptions="CenterAndExpand"
                         Margin="10,0">
                     <Picker.Items>

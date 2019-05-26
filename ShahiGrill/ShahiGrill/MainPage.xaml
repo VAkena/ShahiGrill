@@ -15,26 +15,33 @@
     <ContentPage.Content>
         <StackLayout x:Name="masterStack">
             
+            <!--Shahi Grill logo and text-->
             <StackLayout x:Name="imageStack" Padding="20">
                 <Image Source="Original" HeightRequest="150"/>
                 <Label Text="Shahi Grill" FontSize="28" 
                        HorizontalOptions="Center" FontAttributes="Bold"/>
             </StackLayout>
             
+            <!--Login and sign up elements-->
             <StackLayout x:Name="loginStack" Padding="20">
                 <Entry x:Name="usernameEntry" Placeholder="Username" ReturnType="Next"/>
                 <Entry x:Name="passwordEntry" Placeholder="Password" IsPassword="True" ReturnType="Done"/>
+                
                 <StackLayout Padding="0,20,0,0">
                     <Button x:Name="signIn" Text="Sign In" BackgroundColor="#B0BEC5" Clicked="SignIn_Clicked"/>
                 </StackLayout>
+                
                 <StackLayout Padding="0,10,0,10" >
                     <Button x:Name="signUp" Text="Sign Up" BackgroundColor="#aad402" Clicked="SignUp_Clicked"/>
                 </StackLayout>
+                
+                <!--Grid layout-->
                 <Grid HeightRequest="50" WidthRequest="200">
                     <Grid.RowDefinitions>
                         <RowDefinition Height="Auto"/>
                     </Grid.RowDefinitions>
                 </Grid>
+                
             </StackLayout>
         </StackLayout>
     </ContentPage.Content>
